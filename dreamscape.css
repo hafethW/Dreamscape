@@ -65,8 +65,13 @@ h2{
   opacity: 150%;
   padding: 20px 60px 0;
 }
-#fixCenter{
+.fixCenter{
   display: inline-block;
+  height:200px;
+  margin-right: 50px;
+  margin-left: 20px;
+
+
 }
 .button{
   padding: 15px 32px;
@@ -83,4 +88,48 @@ h2{
   border-width: medium;
   border-radius:  10% / 50%;
   background-color: rgba(255, 204, 153, 0.4);
+}
+
+
+
+.trainer1{
+position: absolute;
+left:58%;
+top:650px;
+height:100px;
+}
+
+.trainer2{
+  position: absolute;
+  left:62%;
+  top:650px;
+  height:100px;
+}
+
+.bug{
+position: absolute;
+top:480px;
+height:300px;
+left:35%;
+}
+
+.iron{
+position: absolute;
+top:650px;
+left:1100;
+width:30px;
+}
+
+@keyframes waffle {
+  from {left: 57%;}
+  to {left: 45%;}
+}
+
+.room{
+  width:100%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+ text-align: center;
+
 }

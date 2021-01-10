@@ -11,21 +11,30 @@
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: 100% 100%;
-          padding:0px;
+
         }
+        body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+     figure { margin: 0; width: 100%; height: 100%; }
+     svg { width: 100%; height: 100%; }
+        figure { margin: 0; width: 100%; height: 100%; }
+        svg { width: 100%; height: 100%; }
       </style>
+
       <h1 id="logo">Dreamscape</h1>
       <div class="box">
         <p id="fixText" class="maintext2">You see nothing in the window beyond the insignia of an ant. Suddenly, an ant twice your size in height opens the door and glares at you.
         You stammer out a hello and request to use its kitchen to film your video. It peers at each of your group in suspicion until it shuffles aside to let you in. As you step in, it growls in your ear, "If not out by midnight, I eat you for snack."</p>
         <p id="fixText" class="maintext2">Change the hands of the clock so that it hits midnight.</p>
+
         <div class="center">
-          /*run clock code*/
+        <img onclick="clock()" style="height:300px" id="clock" src="tic.png">
           <hr>
           <a href="door.html" id="fixCenter" class="button">Back</a>
           <a href="index.html" id="fixCenter" class="button">Home</a>
         </div>
+
       <script src="dreamscape.js"></script>
+
     </body>
   </header>
 </html>

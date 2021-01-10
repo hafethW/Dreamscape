@@ -22,47 +22,58 @@
         <div class="row row-cols-1 row-cols-md-2 g-4 maintext">
           <div class="col">
             <div class="card fixpads" id="fixCol">
-              <img src="..." class="card-img-top" alt="char1">
+              <img src="trainer1.gif" class="card-img-top" alt="char1">
               <div class="card_body">
-                <a href="car.html" class="btn btn-primary">Char1 Name</a>
+                <a onclick="selectChar(1,'Riley')" class="btn btn-primary">Riley</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card fixpads" id="fixCol">
-              <img src="..." class="card-img-top" alt="char2">
+              <img src="trainer2.gif" class="card-img-top" alt="char2">
               <div class="card_body">
-                <a href="car.html" class="btn btn-primary">Char2 Name</a>
+                <a  onclick="selectChar(2,'Cynthia')" class="btn btn-primary">Cynthia</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card fixpads" id="fixCol">
-              <img src="..." class="card-img-top" alt="char3">
+              <img src="trainer3.gif" class="card-img-top" alt="char3">
               <div class="card_body">
-                <a href="car.html" class="btn btn-primary">Char3 Name</a>
+                <a  onclick="selectChar(3,'Lucien')" class="btn btn-primary">Lucien</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card fixpads" id="fixCol">
-              <img src="..." class="card-img-top" alt="char4">
+              <img src="trainer4.gif" class="card-img-top" alt="char4">
               <div class="card_body">
-                <a href="car.html" class="btn btn-primary">Char4 Name</a>
+                <a onclick="selectChar(4,'Byron')" class="btn btn-primary">Byron</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card fixpads" id="fixCol">
-              <img src="..." class="card-img-top" alt="char5">
+              <img src="trainer5.gif" class="card-img-top" alt="char5">
               <div class="card_body">
-                <a href="car.html" class="btn btn-primary">Char5 Name</a>
+                <a onclick="selectChar(5,'Cheryl')" class="btn btn-primary">Cheryl</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <br>
+      <script>
+      function selectChar(charNum, charName){
+        sessionStorage.setItem("charImg", "trainer"+charNum);
+        sessionStorage.setItem("charName", charName);
+
+        window.location.replace("car.html");
+
+        console.log(sessionStorage.getItem("charImg"))
+
+      }
+      </script>
     </body>
   </header>
 </html>
